@@ -1,0 +1,21 @@
+# 🎵 Project Notes — Hum-To-Search
+
+_Last updated: (update this when you return)_
+
+---
+
+## ✅ Where We Left Off
+- **Recording works** → `src/record.py` saves 5s mono WAV to `data/recordings/`
+- **Pitch extraction + visualization works** → `src/pitch_extract.py`, `src/visualize_pitch.py`
+- **Song database from MIDI**:
+  - Single file: `src/add_song_from_midi.py`
+  - Bulk folder import: `src/add_midis_from_folder.py`
+- **Matcher** → `src/match.py` (simple DTW, key/tempo-normalized)
+- **Git** is clean → recordings ignored, safe to push without audio bloat
+- **Known quirk** → some songs swap top rankings (e.g., “Through the Wire” vs “Say My Name”) with simple matcher
+
+---
+
+
+
+
