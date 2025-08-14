@@ -9,7 +9,7 @@ RECORDINGS_DIR = BASE_DIR / "data" / "recordings"
 RECORDINGS_DIR.mkdir(parents=True, exist_ok=True)
 
 # --- Settings ---
-duration = 5        # seconds
+duration = 10        # seconds
 sample_rate = 44100 # Hz
 channels = 1        # mono
 
