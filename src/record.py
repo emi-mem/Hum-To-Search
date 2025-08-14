@@ -1,20 +1,21 @@
+from pathlib import Path
 import sounddevice as sd
 import wavio
-import os
 from datetime import datetime
 
-# Settings
-duration = 5  # seconds
-sample_rate = 44100  # Hz
-channels = 1  # mono
+# --- Paths (works no matter where you run from) ---
+BASE_DIR = Path(__file__).resolve().parent.parent   # project root
+RECORDINGS_DIR = BASE_DIR / "data" / "recordings"
+RECORDINGS_DIR.mkdir(parents=True, exist_ok=True)
 
-# Create recordings folder if it doesn't exist
-recordings_path = "../data/recordings"
-os.makedirs(recordings_path, exist_ok=True)
+# --- Settings ---
+duration = 5        # seconds
+sample_rate = 44100 # Hz
+channels = 1        # mono
 
-# Filename with timestamp
+# --- Filename ---
 filename = f"hum_{datetime.now().strftime('%Y%m%d_%H%M%S')}.wav"
-file_path = os.path.join(recordings_path, filename)
+file_path = RECORDINGS_DIR / filename
 
 print("Recording will start in 5 seconds. Get ready!")
 sd.sleep(2000)
@@ -27,9 +28,9 @@ sd.sleep(1000)
 
 print("Recording...")
 recording = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=channels)
-sd.wait()  # Wait until recording is finished
-print(f"Recording finished! Saved as {file_path}")
+sd.wait()
+print(f"Recording finished! Saving to {file_path}")
 
-# Save as WAV
-wavio.write(file_path, recording, sample_rate, sampwidth=2)
-
+# Save as WAV (16-bit)
+wavio.write(str(file_path), recording, sample_rate, sampwidth=2)
+print("Done.")

@@ -1,0 +1,3 @@
+# Ignore all recordings and extracted pitch data
+data/recordings/*.wav
+data/recordings/*.npy
