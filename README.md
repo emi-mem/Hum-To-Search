@@ -27,7 +27,7 @@ source venv/bin/activate   # Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
 ```
-
+---
 
 ### 2️⃣ Record a hum
 
@@ -36,6 +36,7 @@ python src/record.py
 ```
 🎤 Records ~10 seconds and saves a timestamped WAV in data/recordings/.
 
+---
 
 ### 3️⃣ Extract & visualize (optional)
 
@@ -44,6 +45,8 @@ python src/pitch_extract.py
 python src/visualize_pitch.py
 ```
 📈 See your melody curve in Hz or as note names.
+
+---
 
 ### 4️⃣ Add songs to your DB (from MIDI)
 
@@ -61,6 +64,7 @@ List DB songs:
 ```bash
 python src/list_songs.py
 ```
+---
 
 5️⃣ Match your hum
 ```bash
@@ -77,12 +81,15 @@ python src/match.py
 ❗❗❗ Lower DTW = more similar  ❗❗❗
 ❗❗❗ Ranked from TOP to BOTTOM ❗❗❗
 
+---
 
 🛠 How It Works (in 20 seconds)
 Record audio → detect pitch (Hz) with librosa.pyin
 Convert Hz → MIDI note numbers → subtract median (key-invariant)
 Resample contours to fixed length (tempo normalization)
 Compare with Dynamic Time Warping → smallest distance wins
+
+---
 
 📦 Requirements
 From requirements.txt:
@@ -95,6 +102,8 @@ mido
 matplotlib
 ```
 
+---
+
 📌 Tips for Best Results
 Hum 5–10s of the main hook 🎶
 Quiet room = cleaner pitch detection
@@ -102,16 +111,22 @@ Use good MIDIs (main melody track)
 Crop stored melody to the hook when possible
 If distances are close, consider the top-3 results
 
+---
+
 ⚠ Limitations
 Not Shazam — this is a small-scale matcher for learning/demo
 MIDI quality heavily affects results
 Similar-shaped hooks can still confuse DTW
+
+---
 
 🗺 Roadmap
 🎯 Auto-detect melody track from MIDI
 ✂ Visual/interactive hook cropping
 🪄 Partial matching for short hums
 🌐 Optional web UI for easier use
+
+---
 
 ❓ FAQ
 Q: Do I need internet?
