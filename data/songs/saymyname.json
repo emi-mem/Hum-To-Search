@@ -1,0 +1,9 @@
+{
+  "title": "SayMyName",
+  "slug": "saymyname",
+  "source": "midi",
+  "midi_file": "SayMyName.mid",
+  "midi_seq_file": "saymyname_midi_seq.npy",
+  "rel_file": "saymyname_rel.npy",
+  "hz_file": "saymyname_hz.npy"
+}

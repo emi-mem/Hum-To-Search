@@ -1,0 +1,9 @@
+{
+  "title": "ThroughTheWire",
+  "slug": "throughthewire",
+  "source": "midi",
+  "midi_file": "ThroughTheWire.mid",
+  "midi_seq_file": "throughthewire_midi_seq.npy",
+  "rel_file": "throughthewire_rel.npy",
+  "hz_file": "throughthewire_hz.npy"
+}

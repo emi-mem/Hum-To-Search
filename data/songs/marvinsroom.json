@@ -1,0 +1,9 @@
+{
+  "title": "MarvinsRoom",
+  "slug": "marvinsroom",
+  "source": "midi",
+  "midi_file": "MarvinsRoom.mid",
+  "midi_seq_file": "marvinsroom_midi_seq.npy",
+  "rel_file": "marvinsroom_rel.npy",
+  "hz_file": "marvinsroom_hz.npy"
+}

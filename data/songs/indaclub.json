@@ -1,0 +1,9 @@
+{
+  "title": "InDaClub",
+  "slug": "indaclub",
+  "source": "midi",
+  "midi_file": "InDaClub.mid",
+  "midi_seq_file": "indaclub_midi_seq.npy",
+  "rel_file": "indaclub_rel.npy",
+  "hz_file": "indaclub_hz.npy"
+}

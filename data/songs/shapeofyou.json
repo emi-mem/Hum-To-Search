@@ -1,0 +1,9 @@
+{
+  "title": "ShapeofYou",
+  "slug": "shapeofyou",
+  "source": "midi",
+  "midi_file": "ShapeofYou.mid",
+  "midi_seq_file": "shapeofyou_midi_seq.npy",
+  "rel_file": "shapeofyou_rel.npy",
+  "hz_file": "shapeofyou_hz.npy"
+}

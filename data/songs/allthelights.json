@@ -1,0 +1,9 @@
+{
+  "title": "AllTheLights",
+  "slug": "allthelights",
+  "source": "midi",
+  "midi_file": "AllTheLights.mid",
+  "midi_seq_file": "allthelights_midi_seq.npy",
+  "rel_file": "allthelights_rel.npy",
+  "hz_file": "allthelights_hz.npy"
+}

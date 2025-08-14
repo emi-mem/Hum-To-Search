@@ -1,0 +1,9 @@
+{
+  "title": "AllFallsDown",
+  "slug": "allfallsdown",
+  "source": "midi",
+  "midi_file": "AllFallsDown.mid",
+  "midi_seq_file": "allfallsdown_midi_seq.npy",
+  "rel_file": "allfallsdown_rel.npy",
+  "hz_file": "allfallsdown_hz.npy"
+}
